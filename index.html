@@ -150,19 +150,17 @@
 
             <div class="column large-6 w-900-stack s-about__intro-text">
                 <h1 class="display-1" data-aos="fade-up">
-                    I am a Senior pursuing my Bachelor's Degree in Robotics Engineering
+                    Robotics and Automation Engineer with NAE recognition, award-winning leadership and cross domain expertise in intelligent automation systems
                 </h1>
 
                 <p class="lead" data-aos="fade-up">
-                    A <span class="highlight-conference">Mechatronics and Robotics Engineer</span> specializing in the software, control systems,
-                    and <span class="highlight-conference">system integration for human-assistive technologies</span>. With a dedicated focus on
-                    advancing exoskeletons and prosthetics, my work is grounded in a deep, first-principles
-                    understanding of the physics and mathematics that govern <span class="highlight-conference">complex robotic systems</span>.
-                    As a student at Arizona State University, I have sharpened this expertise while tutoring
-                    engineering fundamentals. I am currently seeking a challenging internship to apply my
-                    skills in mechatronics design and robotics software to contribute to the development of
+                    I hold a <span class="highlight-conference">Bachelor’s in Robotics Engineering</span> from ASU (Summa Cum Laude), specializing in software, control systems, and system 
+                    integration. My experience spans developing myoelectric prosthetics and designing automated battery sorting systems for <span class="highlight-conference">Wisk Aero factory 
+                    automation</span>. Grounded in a first-principles understanding of the physics and mathematics that govern <span class="highlight-conference">complex robotic systems</span>, 
+                    I have sharpened my expertise through undergraduate research at Mayo Clinic and award-winning engineering leadership. I am currently seeking full-time roles to deploy 
                     next-generation <span class="highlight-conference">intelligent systems</span>.
-                </p>
+                </p>                
+                
             </div>
 
             <div class="column large-6 w-900-stack s-about__photo-block">
@@ -176,10 +174,12 @@
                 <ul class="stats-tabs" data-aos="fade-up">
 
                     <li> Languages: Python, C/C++, HTML, MATLAB, Docker </li>
-                    <li> FrameWorks: ROS2(Gazebo), OpenCV, PyTorch, PyBullet, SLAM </li>
-                    <li> Design &amp; Modelling Tools: Solidworks, Fusion 360, Simulink </li>
+                    <li> FrameWorks: ROS2(Gazebo), RViz, OpenCV, PyTorch, PyBullet, Mujoco, SLAM, VGN </li>
+                    <li> Design &amp; Modelling Tools: Solidworks, Fusion 360, Simulink, Ignition SCADA </li>
                     <li> Embedded Systems: KiCAD, Cadence, Altium Designer, MPLab, Cypress </li>
-                    <li> microcontroller: ESP32, Microchip PIC, Arduino, Raspberry Pi 4, Infineon PSoC, Jetson Nano </li>
+                    <li> microcontroller: ESP32, Microchip PIC, Arduino, Raspberry Pi 4, Infineon PSoC, Jetson Nano, Siemens 1215 PLC </li>
+                    <li> Industrial Robots: FANUC SR6iA, Universal Robot UR16e </li>
+                    <li> Lab Instrumentation: Oscilloscopes, Soldering, Multimeters, Waveform Generators </li>
                     <li></li>
                 </ul>
 
@@ -218,7 +218,7 @@
                 <dt><strong>Dean's List </strong></dt>
                 <p>
                     Made to the Fulton Schools of Engineering Dean's 
-                    List during every semester of college I have completed till now.
+                    List during every semester of college.
                 </p>
             </dl>
             
@@ -366,6 +366,29 @@
         </div> <!-- end s-portfolio__top-->
 
          <div class="row s-portfolio__list block-large-1-2 block-tab-full collapse">
+
+            <!-- Project 0 -->
+            <div class="column large-6 w-900-stack s-about__intro-text" data-aos="fade-up">
+                <h5 class="display-1">Adaptive Volumetric Grasping Network</h5>
+                <small data-aos="fade-up">Spring 2026 | Perception in Robotics</small>
+                <p data-aos="fade-up">
+                    VGN-Adaptive is a scene-conditioned decision policy I designed to replace the hand-tuned confidence threshold inside a state-of-the-art robotic grasping network — without 
+                    retraining it. Rather than applying a fixed cutoff to every scene, the system extracts 13 real-time features from the network's quality volume and feeds them into a 
+                    lightweight MLP predictor that selects the optimal threshold per scene automatically. Combined with a feasibility-aware grasp re-ranker and a dynamic fallback rule, 
+                    the system achieved a <span class="highlight-conference">+2.1% improvement</span> in grasp success rate on geometric objects (87.8% vs. 85.7% baseline) and delivered the best success rate and lowest variance (±0.5%) 
+                    on <span class="highlight-conference">120 unseen real-world objects</span> — demonstrating generalization beyond the training distribution with zero retraining of the underlying network.
+                    <a href="https://drive.google.com/file/d/1C_MxxOB9ogyl9h1FtZFUXKUh7VPenbok/view?usp=drive_link" target="_blank">Project Report</a>
+
+                </p>
+            </div>
+            <div class="column large-6 w-900-stack s-about__photo-block" data-aos="fade-up">
+                <figure>
+                    <img src="images/portfolio/VGN_Simulation.gif" 
+                         alt="Grasp Animation"
+                         style="max-width: 100%; height: auto;" />
+
+                </figure>
+            </div>
 
             <!-- Project 1 -->
             <div class="column large-6 w-900-stack s-about__intro-text" data-aos="fade-up">
